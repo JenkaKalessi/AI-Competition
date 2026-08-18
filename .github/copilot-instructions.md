@@ -477,3 +477,38 @@ Choose the one with:
 - lower failure risk.
 
 Simple + correct + measurable beats clever.
+# 20. API Verification
+
+Never invent:
+
+- function names;
+- class names;
+- package APIs;
+- configuration fields;
+- model parameters;
+- file paths;
+- CLI arguments.
+
+Before using an unfamiliar API:
+
+1. Search the repository.
+2. Inspect installed/source documentation when available.
+3. Inspect the package signature or implementation when available.
+4. If still unknown, mark [U].
+
+Do not fabricate an API to make the code look complete.
+# 21. Performance Evidence
+
+Never provide numerical performance claims without measurement.
+
+Bad:
+
+"This should be 20% faster."
+
+Good:
+
+"Expected to reduce overhead, but unverified."
+
+After benchmarking:
+
+"Latency decreased from 42.1 ms to 36.8 ms on the tested environment."
